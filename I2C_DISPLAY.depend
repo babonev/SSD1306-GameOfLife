@@ -1,0 +1,724 @@
+# depslib dependency file v1.0
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\misc.c
+	"misc.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\misc.h
+	"stm32f10x.h"
+
+1474574580 c:\users\boyan\documents\arm-cortex\7_try\inc\stm32f10x.h
+	"core_cm3.h"
+	"system_stm32f10x.h"
+	<stdint.h>
+	"stm32f10x_conf.h"
+
+1473796256 c:\users\boyan\documents\arm-cortex\7_try\cmsis\core_cm3.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+
+1473796256 c:\users\boyan\documents\arm-cortex\7_try\cmsis\core_cminstr.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+
+1473796256 c:\users\boyan\documents\arm-cortex\7_try\cmsis\core_cmfunc.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\inc\system_stm32f10x.h
+
+1474059511 c:\users\boyan\documents\arm-cortex\7_try\inc\stm32f10x_conf.h
+	"stm32f10x_adc.h"
+	"stm32f10x_bkp.h"
+	"stm32f10x_can.h"
+	"stm32f10x_cec.h"
+	"stm32f10x_crc.h"
+	"stm32f10x_dac.h"
+	"stm32f10x_dbgmcu.h"
+	"stm32f10x_dma.h"
+	"stm32f10x_exti.h"
+	"stm32f10x_flash.h"
+	"stm32f10x_fsmc.h"
+	"stm32f10x_gpio.h"
+	"stm32f10x_i2c.h"
+	"stm32f10x_iwdg.h"
+	"stm32f10x_pwr.h"
+	"stm32f10x_rcc.h"
+	"stm32f10x_rtc.h"
+	"stm32f10x_sdio.h"
+	"stm32f10x_spi.h"
+	"stm32f10x_tim.h"
+	"stm32f10x_usart.h"
+	"stm32f10x_wwdg.h"
+	"misc.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_adc.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_bkp.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_can.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_cec.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_crc.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_dac.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_dbgmcu.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_dma.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_exti.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_flash.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_fsmc.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_gpio.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_i2c.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_iwdg.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_pwr.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_rcc.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_rtc.h
+	"stm32f10x.h"
+
+1473796255 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_sdio.h
+	"stm32f10x.h"
+
+1473796256 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_spi.h
+	"stm32f10x.h"
+
+1473796256 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_tim.h
+	"stm32f10x.h"
+
+1473796256 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_usart.h
+	"stm32f10x.h"
+
+1473796256 c:\users\boyan\documents\arm-cortex\7_try\spl\inc\stm32f10x_wwdg.h
+	"stm32f10x.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_adc.c
+	"stm32f10x_adc.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_bkp.c
+	"stm32f10x_bkp.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_can.c
+	"stm32f10x_can.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_cec.c
+	"stm32f10x_cec.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_crc.c
+	"stm32f10x_crc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_dac.c
+	"stm32f10x_dac.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_dbgmcu.c
+	"stm32f10x_dbgmcu.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_dma.c
+	"stm32f10x_dma.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_exti.c
+	"stm32f10x_exti.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_flash.c
+	"stm32f10x_flash.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_fsmc.c
+	"stm32f10x_fsmc.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_gpio.c
+	"stm32f10x_gpio.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_i2c.c
+	"stm32f10x_i2c.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_iwdg.c
+	"stm32f10x_iwdg.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_pwr.c
+	"stm32f10x_pwr.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_rcc.c
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_rtc.c
+	"stm32f10x_rtc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_sdio.c
+	"stm32f10x_sdio.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_spi.c
+	"stm32f10x_spi.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_tim.c
+	"stm32f10x_tim.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_usart.c
+	"stm32f10x_usart.h"
+	"stm32f10x_rcc.h"
+
+1473796256 source:c:\users\boyan\documents\arm-cortex\7_try\spl\src\stm32f10x_wwdg.c
+	"stm32f10x_wwdg.h"
+	"stm32f10x_rcc.h"
+
+1474538301 source:c:\users\boyan\documents\arm-cortex\7_try\src\drvpwm.c
+	"stm32f10x_tim.h"
+	"stm32f10x_gpio.h"
+	"stm32f10x_rcc.h"
+	"DrvPWM.h"
+
+1474538395 c:\users\boyan\documents\arm-cortex\7_try\inc\drvpwm.h
+
+1474822742 source:c:\users\boyan\documents\arm-cortex\7_try\src\main.c
+	"stm32f10x_conf.h"
+	"DrvUART.h"
+	"DrvPWM.h"
+	"DrvSPI.h"
+	"DrvRTC.h"
+
+1473796255 source:c:\users\boyan\documents\arm-cortex\7_try\src\startup_stm32f10x_md.s
+
+1473796255 source:c:\users\boyan\documents\arm-cortex\7_try\src\system_stm32f10x.c
+	"stm32f10x.h"
+
+1474537465 c:\users\boyan\documents\arm-cortex\7_try\inc\drvuart.h
+
+1474537693 source:c:\users\boyan\documents\arm-cortex\7_try\src\qbuffer.c
+	"qBuffer.h"
+
+1474537637 c:\users\boyan\documents\arm-cortex\7_try\inc\qbuffer.h
+
+1474538431 source:c:\users\boyan\documents\arm-cortex\7_try\src\drvuart.c
+	"stm32f10x_usart.h"
+	"stm32f10x_rcc.h"
+	"stm32f10x_gpio.h"
+	"misc.h"
+	"qBuffer.h"
+	"DrvUART.h"
+
+1474236052 source:c:\users\boyan\documents\arm-cortex\7_try\src\drvi2c.c
+	"stm32f10x_i2c.h"
+	"stm32f10x_rcc.h"
+	"stm32f10x_gpio.h"
+	"misc.h"
+
+1474319654 source:c:\users\boyan\documents\arm-cortex\7_try\src\drvssd1306.c
+	"stm32f10x_i2c.h"
+	"stm32f10x_rcc.h"
+	"stm32f10x_gpio.h"
+	"misc.h"
+	"i2c.h"
+
+1474316069 c:\users\boyan\documents\arm-cortex\7_try\inc\i2c.h
+
+1474319627 source:c:\users\boyan\documents\arm-cortex\7_try\src\i2c.c
+	<stm32f10x.h>
+	<stm32f10x_i2c.h>
+	<stm32f10x_rcc.h>
+	<stm32f10x_gpio.h>
+	"i2c.h"
+
+1474316157 c:\users\boyan\documents\arm-cortex\7_try\inc\drvssd1306.h
+
+1460440738 c:\users\boyan\documents\arm-cortex\7_try\inc\uart.h
+
+1460440738 source:c:\users\boyan\documents\arm-cortex\7_try\src\uart.c
+	<stm32f10x.h>
+	<stm32f10x_rcc.h>
+	<stm32f10x_gpio.h>
+	<stm32f10x_usart.h>
+	"uart.h"
+
+1474582044 source:c:\users\boyan\documents\arm-cortex\7_try\src\drvrtc.c
+	"stm32f10x_rtc.h"
+	"stm32f10x_rcc.h"
+	"misc.h"
+	"DrvRTC.h"
+
+1474581367 c:\users\boyan\documents\arm-cortex\7_try\inc\drvrtc.h
+
+1474834201 c:\users\boyan\documents\arm-cortex\7_try\inc\drvspi.h
+
+1474837106 source:c:\users\boyan\documents\arm-cortex\7_try\src\drvspi.c
+	"stm32f10x_spi.h"
+	"stm32f10x_rcc.h"
+	"misc.h"
+	"qBuffer.h"
+	"DrvSPI.h"
+
+1463761430 source:c:\users\boyan\documents\arm-cortex\i2c_display\freertos\croutine.c
+	"FreeRTOS.h"
+	"task.h"
+	"croutine.h"
+
+1482157435 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\freertos.h
+	<stddef.h>
+	<stdint.h>
+	"FreeRTOSConfig.h"
+	"projdefs.h"
+	"portable.h"
+	<reent.h>
+
+1484503463 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\freertosconfig.h
+
+1463761430 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\projdefs.h
+
+1463761430 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\portable.h
+	"deprecated_definitions.h"
+	"portmacro.h"
+	"mpu_wrappers.h"
+
+1463761430 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\deprecated_definitions.h
+	"..\..\Source\portable\owatcom\16bitdos\pc\portmacro.h"
+	"..\..\Source\portable\owatcom\16bitdos\flsh186\portmacro.h"
+	"../portable/GCC/ATMega323/portmacro.h"
+	"../portable/IAR/ATMega323/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC18F/portmacro.h"
+	"../../Source/portable/MPLAB/PIC32MX/portmacro.h"
+	"libFreeRTOS/Include/portmacro.h"
+	"../../Source/portable/SDCC/Cygnal/portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC2000/portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC23xx/portmacro.h"
+	"..\..\Source\portable\IAR\MSP430\portmacro.h"
+	"../../Source/portable/GCC/MSP430F449/portmacro.h"
+	"../../Source/portable/Rowley/MSP430F449/portmacro.h"
+	"..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91SAM7S/portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM7S64\portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM9XE\portmacro.h"
+	"..\..\Source\portable\IAR\LPC2000\portmacro.h"
+	"..\..\Source\portable\IAR\STR71x\portmacro.h"
+	"..\..\Source\portable\IAR\STR75x\portmacro.h"
+	"..\..\Source\portable\GCC\STR75x\portmacro.h"
+	"..\..\Source\portable\IAR\STR91x\portmacro.h"
+	"../../Source/portable/GCC/H8S2329/portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91FR40008/portmacro.h"
+	"../../Source/portable/RVDS/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/CodeWarrior/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MicroBlaze/portmacro.h"
+	"..\..\Source\portable\Paradigm\Tern_EE\small\portmacro.h"
+	"../../Source/portable/GCC/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MCF5235/portmacro.h"
+	"../../../Source/portable/GCC/ColdFire_V2/portmacro.h"
+	"../../Source/portable/CodeWarrior/ColdFire_V2/portmacro.h"
+	"../../Source/portable/GCC/PPC405_Xilinx/portmacro.h"
+	"../../Source/portable/GCC/PPC440_Xilinx/portmacro.h"
+	"..\..\Source\portable\Softune\MB96340\portmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\PC\prtmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\flsh186\prtmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+
+1463761430 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\portmacro.h
+
+1463761430 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\mpu_wrappers.h
+
+1463761430 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\task.h
+	"list.h"
+
+1463761430 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\list.h
+
+1463761430 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\croutine.h
+	"list.h"
+
+1463761430 source:c:\users\boyan\documents\arm-cortex\i2c_display\freertos\event_groups.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"event_groups.h"
+
+1463761430 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\timers.h
+	"task.h"
+
+1463761430 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\event_groups.h
+	"timers.h"
+
+1463761430 source:c:\users\boyan\documents\arm-cortex\i2c_display\freertos\list.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"list.h"
+
+1482229025 source:c:\users\boyan\documents\arm-cortex\i2c_display\freertos\port.c
+	"FreeRTOS.h"
+	"task.h"
+
+1482237304 source:c:\users\boyan\documents\arm-cortex\i2c_display\freertos\queue.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"croutine.h"
+
+1463761430 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\queue.h
+
+1463761431 source:c:\users\boyan\documents\arm-cortex\i2c_display\freertos\tasks.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"StackMacros.h"
+	<stdio.h>
+	"tasks_test_access_functions.h"
+
+1481922628 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\stackmacros.h
+
+1463761431 source:c:\users\boyan\documents\arm-cortex\i2c_display\freertos\timers.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"timers.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\misc.c
+	"misc.h"
+
+1483994199 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\misc.h
+	"stm32f10x.h"
+
+1483994199 c:\users\boyan\documents\arm-cortex\i2c_display\inc\stm32f10x.h
+	"core_cm3.h"
+	"system_stm32f10x.h"
+	<stdint.h>
+	"stm32f10x_conf.h"
+
+1483994201 c:\users\boyan\documents\arm-cortex\i2c_display\cmsis\core_cm3.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+
+1483994201 c:\users\boyan\documents\arm-cortex\i2c_display\cmsis\core_cminstr.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+
+1483994201 c:\users\boyan\documents\arm-cortex\i2c_display\cmsis\core_cmfunc.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+
+1483994199 c:\users\boyan\documents\arm-cortex\i2c_display\inc\system_stm32f10x.h
+
+1484082558 c:\users\boyan\documents\arm-cortex\i2c_display\inc\stm32f10x_conf.h
+	"stm32f10x_adc.h"
+	"stm32f10x_bkp.h"
+	"stm32f10x_can.h"
+	"stm32f10x_cec.h"
+	"stm32f10x_crc.h"
+	"stm32f10x_dac.h"
+	"stm32f10x_dbgmcu.h"
+	"stm32f10x_dma.h"
+	"stm32f10x_exti.h"
+	"stm32f10x_flash.h"
+	"stm32f10x_fsmc.h"
+	"stm32f10x_gpio.h"
+	"stm32f10x_i2c.h"
+	"stm32f10x_iwdg.h"
+	"stm32f10x_pwr.h"
+	"stm32f10x_rcc.h"
+	"stm32f10x_rtc.h"
+	"stm32f10x_sdio.h"
+	"stm32f10x_spi.h"
+	"stm32f10x_tim.h"
+	"stm32f10x_usart.h"
+	"stm32f10x_wwdg.h"
+	"misc.h"
+
+1483994199 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_adc.h
+	"stm32f10x.h"
+
+1483994199 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_bkp.h
+	"stm32f10x.h"
+
+1483994199 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_can.h
+	"stm32f10x.h"
+
+1483994199 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_cec.h
+	"stm32f10x.h"
+
+1483994199 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_crc.h
+	"stm32f10x.h"
+
+1483994199 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_dac.h
+	"stm32f10x.h"
+
+1483994199 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_dbgmcu.h
+	"stm32f10x.h"
+
+1483994199 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_dma.h
+	"stm32f10x.h"
+
+1483994199 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_exti.h
+	"stm32f10x.h"
+
+1483994199 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_flash.h
+	"stm32f10x.h"
+
+1483994200 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_fsmc.h
+	"stm32f10x.h"
+
+1483994200 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_gpio.h
+	"stm32f10x.h"
+
+1483994200 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_i2c.h
+	"stm32f10x.h"
+
+1483994200 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_iwdg.h
+	"stm32f10x.h"
+
+1483994200 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_pwr.h
+	"stm32f10x.h"
+
+1483994200 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_rcc.h
+	"stm32f10x.h"
+
+1483994200 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_rtc.h
+	"stm32f10x.h"
+
+1483994200 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_sdio.h
+	"stm32f10x.h"
+
+1483994200 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_spi.h
+	"stm32f10x.h"
+
+1483994200 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_tim.h
+	"stm32f10x.h"
+
+1483994200 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_usart.h
+	"stm32f10x.h"
+
+1483994200 c:\users\boyan\documents\arm-cortex\i2c_display\spl\inc\stm32f10x_wwdg.h
+	"stm32f10x.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_adc.c
+	"stm32f10x_adc.h"
+	"stm32f10x_rcc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_bkp.c
+	"stm32f10x_bkp.h"
+	"stm32f10x_rcc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_can.c
+	"stm32f10x_can.h"
+	"stm32f10x_rcc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_cec.c
+	"stm32f10x_cec.h"
+	"stm32f10x_rcc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_crc.c
+	"stm32f10x_crc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_dac.c
+	"stm32f10x_dac.h"
+	"stm32f10x_rcc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_dbgmcu.c
+	"stm32f10x_dbgmcu.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_dma.c
+	"stm32f10x_dma.h"
+	"stm32f10x_rcc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_exti.c
+	"stm32f10x_exti.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_flash.c
+	"stm32f10x_flash.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_fsmc.c
+	"stm32f10x_fsmc.h"
+	"stm32f10x_rcc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_gpio.c
+	"stm32f10x_gpio.h"
+	"stm32f10x_rcc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_i2c.c
+	"stm32f10x_i2c.h"
+	"stm32f10x_rcc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_iwdg.c
+	"stm32f10x_iwdg.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_pwr.c
+	"stm32f10x_pwr.h"
+	"stm32f10x_rcc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_rcc.c
+	"stm32f10x_rcc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_rtc.c
+	"stm32f10x_rtc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_sdio.c
+	"stm32f10x_sdio.h"
+	"stm32f10x_rcc.h"
+
+1483994200 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_spi.c
+	"stm32f10x_spi.h"
+	"stm32f10x_rcc.h"
+
+1483994201 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_tim.c
+	"stm32f10x_tim.h"
+	"stm32f10x_rcc.h"
+
+1483994201 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_usart.c
+	"stm32f10x_usart.h"
+	"stm32f10x_rcc.h"
+
+1483994201 source:c:\users\boyan\documents\arm-cortex\i2c_display\spl\src\stm32f10x_wwdg.c
+	"stm32f10x_wwdg.h"
+	"stm32f10x_rcc.h"
+
+1485981305 source:c:\users\boyan\documents\arm-cortex\i2c_display\src\drvi2c.c
+	<stm32f10x.h>
+	<stm32f10x_i2c.h>
+	<stm32f10x_rcc.h>
+	<stm32f10x_gpio.h>
+	<stm32f10x_dma.h>
+	"FreeRTOS.h"
+	"task.h"
+	"DrvI2C.h"
+
+1484476811 c:\users\boyan\documents\arm-cortex\i2c_display\inc\drvi2c.h
+
+1485983627 source:c:\users\boyan\documents\arm-cortex\i2c_display\src\drvrtc.c
+	"stm32f10x_rtc.h"
+	"stm32f10x_rcc.h"
+	"misc.h"
+	"FreeRTOS.h"
+	"task.h"
+	"DrvRTC.h"
+	"DrvSSD1306.h"
+
+1485981487 c:\users\boyan\documents\arm-cortex\i2c_display\inc\drvrtc.h
+
+1485983750 source:c:\users\boyan\documents\arm-cortex\i2c_display\src\drvssd1306.c
+	"stm32f10x_i2c.h"
+	"stm32f10x_rcc.h"
+	"stm32f10x_gpio.h"
+	"misc.h"
+	"FreeRTOS.h"
+	"task.h"
+	"semphr.h"
+	"DrvSSD1306.h"
+	"DrvI2C.h"
+	"DrvRTC.h"
+	"font.h"
+	<string.h>
+
+1484549279 source:c:\users\boyan\documents\arm-cortex\i2c_display\src\drvuart.c
+	"stm32f10x_usart.h"
+	"stm32f10x_rcc.h"
+	"stm32f10x_gpio.h"
+	"misc.h"
+	"FreeRTOS.h"
+	"queue.h"
+	"task.h"
+	"DrvUART.h"
+
+1483999383 c:\users\boyan\documents\arm-cortex\i2c_display\inc\drvuart.h
+
+1483994199 source:c:\users\boyan\documents\arm-cortex\i2c_display\src\startup_stm32f10x_ld.s
+
+1482230448 source:c:\users\boyan\documents\arm-cortex\i2c_display\src\startup_stm32f10x_md.s
+
+1483994199 source:c:\users\boyan\documents\arm-cortex\i2c_display\src\system_stm32f10x.c
+	"stm32f10x.h"
+
+1485975202 c:\users\boyan\documents\arm-cortex\i2c_display\inc\drvssd1306.h
+
+1485978673 source:c:\users\boyan\documents\arm-cortex\i2c_display\src\main.c
+	"stm32f10x_conf.h"
+	"FreeRTOS.h"
+	"task.h"
+	"DrvUART.h"
+	"DrvRTC.h"
+	"DrvI2C.h"
+	"DrvSSD1306.h"
+	"GameOfLife.h"
+
+1463761430 c:\users\boyan\documents\arm-cortex\i2c_display\freertos\include\semphr.h
+	"queue.h"
+
+1484497374 c:\users\boyan\documents\arm-cortex\i2c_display\inc\resources.h
+
+1484513690 c:\users\boyan\documents\arm-cortex\i2c_display\inc\font.h
+	<stdint.h>
+
+1484513681 source:c:\users\boyan\documents\arm-cortex\i2c_display\src\font.c
+	"font.h"
+
+1485896012 c:\users\boyan\documents\arm-cortex\i2c_display\inc\gameoflife.h
+
+1485975224 source:c:\users\boyan\documents\arm-cortex\i2c_display\src\gameoflife.c
+	"stm32f10x.h"
+	"FreeRTOS.h"
+	"task.h"
+	"GameOfLife.h"
+	"DrvSSD1306.h"
+	"random.h"
+
+1484948153 c:\users\boyan\documents\arm-cortex\i2c_display\inc\random.h
+
+1485809209 source:c:\users\boyan\documents\arm-cortex\i2c_display\src\random.c
+	"stm32f10x.h"
+	"stm32f10x_adc.h"
+	"random.h"
+

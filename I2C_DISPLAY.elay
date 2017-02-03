@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBitz_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="cmsis\core_cm3.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="37032" topLine="599" />
+		</Cursor>
+	</File>
+	<File name="FreeRTOS\croutine.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3793" topLine="51" />
+		</Cursor>
+	</File>
+	<File name="FreeRTOS\event_groups.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12203" topLine="290" />
+		</Cursor>
+	</File>
+	<File name="FreeRTOS\include\FreeRTOS.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="25914" topLine="814" />
+		</Cursor>
+	</File>
+	<File name="FreeRTOS\include\FreeRTOSConfig.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4527" topLine="77" />
+		</Cursor>
+	</File>
+	<File name="FreeRTOS\include\portmacro.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10762" topLine="257" />
+		</Cursor>
+	</File>
+	<File name="FreeRTOS\include\semphr.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="15011" topLine="317" />
+		</Cursor>
+	</File>
+	<File name="FreeRTOS\include\task.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="85975" topLine="2026" />
+		</Cursor>
+	</File>
+	<File name="FreeRTOS\port.c" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="15940" topLine="361" />
+		</Cursor>
+	</File>
+	<File name="FreeRTOS\queue.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="45972" topLine="1237" />
+		</Cursor>
+	</File>
+	<File name="FreeRTOS\tasks.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="125495" topLine="3770" />
+		</Cursor>
+	</File>
+	<File name="inc\DrvI2C.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="804" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="inc\DrvRTC.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2444" topLine="28" />
+		</Cursor>
+	</File>
+	<File name="inc\DrvSSD1306.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1640" topLine="8" />
+		</Cursor>
+	</File>
+	<File name="inc\DrvUART.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="inc\font.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2324" topLine="41" />
+		</Cursor>
+	</File>
+	<File name="inc\GameOfLife.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1257" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="inc\stm32f10x.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="636777" topLine="8337" />
+		</Cursor>
+	</File>
+	<File name="inc\stm32f10x_conf.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2527" topLine="35" />
+		</Cursor>
+	</File>
+	<File name="inc\system_stm32f10x.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1879" topLine="45" />
+		</Cursor>
+	</File>
+	<File name="SPL\inc\misc.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8441" topLine="183" />
+		</Cursor>
+	</File>
+	<File name="SPL\inc\stm32f10x_adc.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9471" topLine="425" />
+		</Cursor>
+	</File>
+	<File name="SPL\inc\stm32f10x_dma.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3962" topLine="74" />
+		</Cursor>
+	</File>
+	<File name="SPL\inc\stm32f10x_i2c.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="17604" topLine="410" />
+		</Cursor>
+	</File>
+	<File name="SPL\inc\stm32f10x_rcc.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="28839" topLine="663" />
+		</Cursor>
+	</File>
+	<File name="SPL\inc\stm32f10x_rtc.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3486" topLine="98" />
+		</Cursor>
+	</File>
+	<File name="SPL\inc\stm32f10x_usart.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9710" topLine="260" />
+		</Cursor>
+	</File>
+	<File name="SPL\src\misc.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3917" topLine="113" />
+		</Cursor>
+	</File>
+	<File name="SPL\src\stm32f10x_adc.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7111" topLine="288" />
+		</Cursor>
+	</File>
+	<File name="SPL\src\stm32f10x_dma.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="17858" topLine="439" />
+		</Cursor>
+	</File>
+	<File name="SPL\src\stm32f10x_i2c.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="35474" topLine="1036" />
+		</Cursor>
+	</File>
+	<File name="SPL\src\stm32f10x_rcc.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="45987" topLine="1300" />
+		</Cursor>
+	</File>
+	<File name="SPL\src\stm32f10x_rtc.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6034" topLine="230" />
+		</Cursor>
+	</File>
+	<File name="SPL\src\stm32f10x_usart.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="37690" topLine="1019" />
+		</Cursor>
+	</File>
+	<File name="src\DrvI2C.c" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1500" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="src\DrvRTC.c" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4244" topLine="93" />
+		</Cursor>
+	</File>
+	<File name="src\DrvSSD1306.c" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5091" topLine="113" />
+		</Cursor>
+	</File>
+	<File name="src\DrvUART.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7632" topLine="171" />
+		</Cursor>
+	</File>
+	<File name="src\font.c" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="27469" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="src\GameOfLife.c" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10548" topLine="258" />
+		</Cursor>
+	</File>
+	<File name="src\main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2108" topLine="45" />
+		</Cursor>
+	</File>
+	<File name="src\random.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2705" topLine="52" />
+		</Cursor>
+	</File>
+	<File name="src\startup_stm32f10x_md.S" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7300" topLine="222" />
+		</Cursor>
+	</File>
+	<File name="src\system_stm32f10x.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7785" topLine="206" />
+		</Cursor>
+	</File>
+	<File name="stm32f103c6_flash.ld" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4954" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="stm32f103c6_sram.ld" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3067" topLine="25" />
+		</Cursor>
+	</File>
+	<File name="version.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="254" topLine="0" />
+		</Cursor>
+	</File>
+</EmBitz_layout_file>

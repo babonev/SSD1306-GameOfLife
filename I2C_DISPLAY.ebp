@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBitz_project_file>
+	<EmBitzVersion release="1.11" revision="0" />
+	<FileVersion major="1" minor="0" />
+	<Project>
+		<Option title="I2C_DISPLAY" />
+		<Option compiler="armgcc_eb" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\I2C_DISPLAY.elf" />
+				<Option object_output="obj\Debug\" />
+				<Option type="0" />
+				<Option create_hex="1" />
+				<Option compiler="armgcc_eb" />
+				<Option projectDeviceOptionsRelation="0" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+					<Add option="-O0" />
+					<Add option="-g3" />
+					<Add symbol="USE_STDPERIPH_DRIVER" />
+				</Compiler>
+				<Cpp>
+					<Add option="-Wall" />
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+					<Add option="-O0" />
+					<Add option="-g3" />
+				</Cpp>
+				<Assembler>
+					<Add option="-Wa,--gdwarf-2" />
+				</Assembler>
+				<Linker>
+					<Add option="-Wl,--gc-sections" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\I2C_DISPLAY.elf" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option create_hex="1" />
+				<Option compiler="armgcc_eb" />
+				<Option projectDeviceOptionsRelation="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-g2" />
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+				</Compiler>
+				<Cpp>
+					<Add option="-O2" />
+					<Add option="-g2" />
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+				</Cpp>
+				<Assembler>
+					<Add option="-Wa,--no-warn" />
+				</Assembler>
+				<Linker>
+					<Add option="-Wl,--gc-sections" />
+				</Linker>
+			</Target>
+		</Build>
+		<Device>
+			<Add option="$device=cortex-m3" />
+			<Add option="$stack=0x0100" />
+			<Add option="$heap=0x0000" />
+			<Add option="$lscript=./stm32f103c6_flash.ld" />
+		</Device>
+		<Compiler>
+			<Add option="-mfloat-abi=soft" />
+			<Add option="-fno-strict-aliasing" />
+			<Add symbol="STM32F103C6" />
+			<Add symbol="STM32F10X_LD" />
+			<Add symbol="USE_STDPERIPH_DRIVER" />
+			<Add directory=".\inc" />
+			<Add directory=".\src" />
+			<Add directory=".\cmsis" />
+			<Add directory=".\SPL\inc" />
+			<Add directory=".\SPL\src" />
+		</Compiler>
+		<Linker>
+			<Add option="-eb_start_files" />
+			<Add option="-eb_lib=n" />
+		</Linker>
+		<Unit filename="cmsis\core_cm3.h" />
+		<Unit filename="cmsis\core_cmFunc.h" />
+		<Unit filename="cmsis\core_cmInstr.h" />
+		<Unit filename="FreeRTOS\croutine.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS\event_groups.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS\include\croutine.h" />
+		<Unit filename="FreeRTOS\include\deprecated_definitions.h" />
+		<Unit filename="FreeRTOS\include\event_groups.h" />
+		<Unit filename="FreeRTOS\include\FreeRTOS.h" />
+		<Unit filename="FreeRTOS\include\FreeRTOSConfig.h" />
+		<Unit filename="FreeRTOS\include\list.h" />
+		<Unit filename="FreeRTOS\include\mpu_prototypes.h" />
+		<Unit filename="FreeRTOS\include\mpu_wrappers.h" />
+		<Unit filename="FreeRTOS\include\portable.h" />
+		<Unit filename="FreeRTOS\include\portmacro.h" />
+		<Unit filename="FreeRTOS\include\projdefs.h" />
+		<Unit filename="FreeRTOS\include\queue.h" />
+		<Unit filename="FreeRTOS\include\semphr.h" />
+		<Unit filename="FreeRTOS\include\StackMacros.h" />
+		<Unit filename="FreeRTOS\include\task.h" />
+		<Unit filename="FreeRTOS\include\timers.h" />
+		<Unit filename="FreeRTOS\list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS\port.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS\queue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS\tasks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FreeRTOS\timers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="inc\DrvI2C.h" />
+		<Unit filename="inc\DrvRTC.h" />
+		<Unit filename="inc\DrvSSD1306.h" />
+		<Unit filename="inc\DrvUART.h" />
+		<Unit filename="inc\font.h" />
+		<Unit filename="inc\GameOfLife.h" />
+		<Unit filename="inc\random.h" />
+		<Unit filename="inc\stm32f10x.h" />
+		<Unit filename="inc\stm32f10x_conf.h" />
+		<Unit filename="inc\system_stm32f10x.h" />
+		<Unit filename="readme.txt" />
+		<Unit filename="SPL\inc\misc.h" />
+		<Unit filename="SPL\inc\stm32f10x_adc.h" />
+		<Unit filename="SPL\inc\stm32f10x_bkp.h" />
+		<Unit filename="SPL\inc\stm32f10x_can.h" />
+		<Unit filename="SPL\inc\stm32f10x_cec.h" />
+		<Unit filename="SPL\inc\stm32f10x_crc.h" />
+		<Unit filename="SPL\inc\stm32f10x_dac.h" />
+		<Unit filename="SPL\inc\stm32f10x_dbgmcu.h" />
+		<Unit filename="SPL\inc\stm32f10x_dma.h" />
+		<Unit filename="SPL\inc\stm32f10x_exti.h" />
+		<Unit filename="SPL\inc\stm32f10x_flash.h" />
+		<Unit filename="SPL\inc\stm32f10x_fsmc.h" />
+		<Unit filename="SPL\inc\stm32f10x_gpio.h" />
+		<Unit filename="SPL\inc\stm32f10x_i2c.h" />
+		<Unit filename="SPL\inc\stm32f10x_iwdg.h" />
+		<Unit filename="SPL\inc\stm32f10x_pwr.h" />
+		<Unit filename="SPL\inc\stm32f10x_rcc.h" />
+		<Unit filename="SPL\inc\stm32f10x_rtc.h" />
+		<Unit filename="SPL\inc\stm32f10x_sdio.h" />
+		<Unit filename="SPL\inc\stm32f10x_spi.h" />
+		<Unit filename="SPL\inc\stm32f10x_tim.h" />
+		<Unit filename="SPL\inc\stm32f10x_usart.h" />
+		<Unit filename="SPL\inc\stm32f10x_wwdg.h" />
+		<Unit filename="SPL\src\misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_bkp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_can.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_cec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_crc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_dac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_dbgmcu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_dma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_exti.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_flash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_fsmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_iwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_pwr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_rcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_sdio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_tim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_usart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SPL\src\stm32f10x_wwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\DrvI2C.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\DrvRTC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\DrvSSD1306.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\DrvUART.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\font.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\GameOfLife.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\random.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\startup_stm32f10x_md.S">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\system_stm32f10x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="stm32f103c6_flash.ld" />
+		<Unit filename="stm32f103c6_sram.ld" />
+		<Unit filename="version.h" />
+		<Extensions>
+			<code_completion />
+			<debugger>
+				<target_debugging_settings target="Debug" active_interface="ST-link">
+					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBITZ}\share\contrib" executable="STLinkGDB.exe" description="" dont_start_server="false" backoff_time="1000" options="2" reg_filter="0" active_family="STMicroelectronics" gdb_before_conn="" gdb_after_conn="">
+						<family_options family_id="STMicroelectronics">
+							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
+							<option opt_id="ID_VECTOR_START" opt_value="0x08000000" />
+							<option opt_id="ID_RESET_TYPE" opt_value="System" />
+							<option opt_id="ID_LOAD_PROGRAM" opt_value="1" />
+							<option opt_id="ID_SEMIHOST_CHECK" opt_value="0" />
+							<option opt_id="ID_RAM_EXEC" opt_value="0" />
+							<option opt_id="ID_VEC_TABLE" opt_value="1" />
+							<option opt_id="ID_DONT_CONN_RESET" opt_value="0" />
+							<option opt_id="ID_ALL_MODE_DEBUG" opt_value="0" />
+							<option opt_id="ID_DEV_ADDR" opt_value="" />
+							<option opt_id="ID_VERBOSE_LEVEL" opt_value="3" />
+						</family_options>
+					</debug_interface>
+				</target_debugging_settings>
+				<target_debugging_settings target="Release" active_interface="ST-link">
+					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBITZ}\share\contrib" executable="STLinkGDB.exe" description="" dont_start_server="false" backoff_time="1000" options="2" reg_filter="0" active_family="STMicroelectronics" gdb_before_conn="" gdb_after_conn="">
+						<family_options family_id="STMicroelectronics">
+							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
+							<option opt_id="ID_VECTOR_START" opt_value="0x08000000" />
+							<option opt_id="ID_RESET_TYPE" opt_value="System" />
+							<option opt_id="ID_LOAD_PROGRAM" opt_value="1" />
+							<option opt_id="ID_SEMIHOST_CHECK" opt_value="0" />
+							<option opt_id="ID_RAM_EXEC" opt_value="0" />
+							<option opt_id="ID_VEC_TABLE" opt_value="1" />
+							<option opt_id="ID_DONT_CONN_RESET" opt_value="0" />
+							<option opt_id="ID_ALL_MODE_DEBUG" opt_value="0" />
+							<option opt_id="ID_DEV_ADDR" opt_value="" />
+							<option opt_id="ID_VERBOSE_LEVEL" opt_value="3" />
+						</family_options>
+					</debug_interface>
+				</target_debugging_settings>
+			</debugger>
+			<envvars />
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings use_defines="1" autoincrement="1" date_declarations="1" update_manifest="1" do_auto_increment="1" ask_to_increment="0" language="C" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
+		</Extensions>
+	</Project>
+</EmBitz_project_file>
