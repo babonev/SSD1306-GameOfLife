@@ -51,7 +51,7 @@ typedef struct
 ///=====================================================================================================================
 /// LOCAL DATA
 ///=====================================================================================================================
-
+static uint8_t page = 0;
 
 ///=====================================================================================================================
 /// LOCAL FUNCTIONS
@@ -97,7 +97,14 @@ void GOL_Task( void *pvParameters )
                 isSeeded = pdTRUE;
             }
 
-            DrvDisplay_ReleaseDrawSurface(DRAW_GOL_BIT);
+            if ( page >= NUMBER_OF_PAGES )
+            {
+                DrvDisplay_ReleaseDrawSurface(DRAW_GOL_BIT);
+            }
+            else
+            {
+                DrvDisplay_ReleaseDrawSurface(0);
+            }
 
             taskYIELD();
         }
@@ -148,7 +155,6 @@ static void seed( uint8_t (*gameBoard)[NUMBER_OF_PAGES][NUMBER_OF_COLUMNS] )
 ///---------------------------------------------------------------------------------------------------------------------
 static void evolve( uint8_t (*gameBoard)[NUMBER_OF_PAGES][NUMBER_OF_COLUMNS] )
 {
-    static uint8_t page = 0;
     Life_t life;
     uint8_t col, row, pageUp, pageDown, colLeft, colRight;
     uint32_t left, mid, right, center;
