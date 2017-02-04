@@ -145,12 +145,12 @@ void DrvDisplay_ReleaseDrawSurface( const BaseType_t shouldRedraw )
 {
     if ( (0 != xDrawMutex) && (0 != xDrawToNotify) )
     {
-        SSD1306_Refresh();
         xSemaphoreGive( xDrawMutex );
 
         /// Redraw only if the last task requires it
         if ( pdFALSE != shouldRedraw )
         {
+            SSD1306_Refresh();
             xTaskNotifyGive( xDrawToNotify );
         }
     }

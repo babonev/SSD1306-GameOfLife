@@ -5,6 +5,7 @@
 * @date     22 Sep 2016
 * @brief
 *
+* @copyright
 ***********************************************************************************************************************/
 
 
@@ -56,6 +57,7 @@ static void Init_RCC(void);
 static void Init_NVIC(void);
 static void Init_RTC(void);
 static void GetDateTime( DateTimeType* const dt );
+static void SetDateTime( DateTimeType* const dt );
 
 
 ///=====================================================================================================================
@@ -93,25 +95,21 @@ void DrvRTC_Task( void *pvParameters )
 
     while(1)
     {
+        if ( DrvDisplay_GetDrawSurface(&canvas, 0) )
+        {
+            DrvRTC_GetTimeStr(timeStr);
+            DrvDisplay_DrawString(timeStr, sizeof(timeStr), 0);
+            DrvDisplay_ReleaseDrawSurface( pdFALSE );
+
+            taskYIELD();
+        }
+
+        ulNotificationValue = ulTaskNotifyTake( pdTRUE, 2 );
+
         if ( ulNotificationValue != 0 )
         {
             GetDateTime(&CurrentDateTime);
-
-            do
-            {
-                if ( DrvDisplay_GetDrawSurface(&canvas, 0) )
-                {
-                    DrvRTC_GetTimeStr(timeStr);
-                    DrvDisplay_DrawString(timeStr, sizeof(timeStr), 0);
-                    DrvDisplay_ReleaseDrawSurface( pdFALSE );
-
-                    ulNotificationValue = 0;
-                }
-            }
-            while( ulNotificationValue != 0);
         }
-
-        ulNotificationValue = ulTaskNotifyTake( pdTRUE, pdMS_TO_TICKS( 200 ) );
     }
 }
 
@@ -145,30 +143,35 @@ void DrvRTC_SetUTC( const uint32_t utc )
 /// @param  None
 /// @retval None
 ///---------------------------------------------------------------------------------------------------------------------
-void DrvRTC_SetDateTime( const DateTimeType* const newDateTime )
+void DrvRTC_SetDate( const uint8_t day, const uint8_t month, const uint16_t year )
 {
-	uint32_t utc, i, y;
+    DateTimeType dt;
 
-	y = newDateTime->year - 1970;
-	if (y > 2106 || !newDateTime->month || !newDateTime->day)
-    {
-        assert_param(pdFALSE);
-    }
-    else
-    {
-        utc = y / 4 * 1461; y %= 4;
-        utc += y * 365 + (y > 2 ? 1 : 0);
-        for (i = 0; i < 12 && i + 1 < newDateTime->month; i++)
-        {
-            utc += NOD[i];
-            if (i == 1 && y == 2) utc++;
-        }
-        utc += newDateTime->day - 1;
-        utc *= 86400;
-        utc += newDateTime->hour * 3600 + newDateTime->minutes * 60 + newDateTime->seconds;
+	dt = CurrentDateTime;
 
-        DrvRTC_SetUTC(utc);
-    }
+	dt.day = day;
+	dt.month = month;
+	dt.year = year;
+
+    SetDateTime(&dt);
+}
+
+///---------------------------------------------------------------------------------------------------------------------
+/// @brief
+/// @param  None
+/// @retval None
+///---------------------------------------------------------------------------------------------------------------------
+void DrvRTC_SetTime( const uint8_t hour, const uint8_t minutes, const uint8_t seconds )
+{
+    DateTimeType dt;
+
+	dt = CurrentDateTime;
+
+	dt.hour = hour;
+	dt.minutes = minutes;
+	dt.seconds = seconds;
+
+    SetDateTime(&dt);
 }
 
 ///---------------------------------------------------------------------------------------------------------------------
@@ -325,6 +328,37 @@ static void GetDateTime( DateTimeType* const dt )
 	}
 	dt->month = (uint8_t)(1 + i);
 	dt->day = (uint8_t)(1 + ts);
+}
+
+///---------------------------------------------------------------------------------------------------------------------
+/// @brief
+/// @param  None
+/// @retval None
+///---------------------------------------------------------------------------------------------------------------------
+static void SetDateTime( DateTimeType* const dt )
+{
+	uint32_t utc, i, y;
+
+	y = dt->year - 1970;
+	if (y > 2106 || !dt->month || !dt->day)
+    {
+        assert_param(pdFALSE);
+    }
+    else
+    {
+        utc = y / 4 * 1461; y %= 4;
+        utc += y * 365 + (y > 2 ? 1 : 0);
+        for (i = 0; i < 12 && i + 1 < dt->month; i++)
+        {
+            utc += NOD[i];
+            if (i == 1 && y == 2) utc++;
+        }
+        utc += dt->day - 1;
+        utc *= 86400;
+        utc += dt->hour * 3600 + dt->minutes * 60 + dt->seconds;
+
+        DrvRTC_SetUTC(utc);
+    }
 }
 
 ///---------------------------------------------------------------------------------------------------------------------

@@ -50,7 +50,7 @@ typedef struct
 ///=====================================================================================================================
 /// LOCAL DATA
 ///=====================================================================================================================
-
+static BaseType_t firstHalf = pdTRUE;
 
 ///=====================================================================================================================
 /// LOCAL FUNCTIONS
@@ -96,7 +96,7 @@ void GOL_Task( void *pvParameters )
                 isSeeded = pdTRUE;
             }
 
-            DrvDisplay_ReleaseDrawSurface(pdTRUE);
+            DrvDisplay_ReleaseDrawSurface(firstHalf);
         }
     }
 }
@@ -146,10 +146,25 @@ static void seed( uint8_t (*gameBoard)[NUMBER_OF_PAGES][NUMBER_OF_COLUMNS] )
 static void evolve( uint8_t (*gameBoard)[NUMBER_OF_PAGES][NUMBER_OF_COLUMNS] )
 {
     Life_t life;
-    uint8_t col, page, row, pageUp, pageDown, colLeft, colRight;
+    uint8_t col, page, row, pageUp, pageDown, colLeft, colRight, start_val, end_val;
     uint32_t left, mid, right, center;
 
-    for( page = 0; page < NUMBER_OF_PAGES; page++ )
+    /// Split the task job into halves
+    if ( pdFALSE != firstHalf )
+    {
+        start_val = 0;
+        end_val = NUMBER_OF_PAGES/ 2;
+    }
+    else
+    {
+        start_val = NUMBER_OF_PAGES/ 2;
+        end_val = NUMBER_OF_PAGES;
+    }
+
+    firstHalf = !firstHalf;
+
+    /// Start scanning
+    for( page = start_val; page < end_val; page++ )
     {
         pageUp = (page == 0) ? (NUMBER_OF_PAGES - 1) : (page - 1);
         pageDown = (page == (NUMBER_OF_PAGES - 1)) ? 0 : (page + 1);
