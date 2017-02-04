@@ -112,7 +112,7 @@ void DrvRTC_Task( void *pvParameters )
             GetDateTime(&CurrentDateTime);
         }
 
-        vTaskDelay(pdMS_TO_TICKS(50));
+        vTaskDelay(pdMS_TO_TICKS(200));
     }
 }
 
