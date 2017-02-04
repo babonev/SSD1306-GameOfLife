@@ -13,11 +13,11 @@
 /// INCLUDE SECTION
 ///=====================================================================================================================
 #include "stm32f10x_rtc.h"
-#include "stm32f10x_rcc.h"
 #include "misc.h"
 
 #include "FreeRTOS.h"
 #include "task.h"
+#include "event_groups.h"
 #include "DrvRTC.h"
 #include "DrvSSD1306.h"
 
@@ -44,6 +44,7 @@ static const uint8_t MONTHS_NAME[][4] = { "Jan","Feb","Mar","Apr","May","Jun","J
 StackType_t xRtcStack[configRTC_TASK_STACK_SIZE];
 StaticTask_t xRtcTaskTCBBuffer;
 TaskHandle_t xRtcToNotify = 0;
+
 
 ///=====================================================================================================================
 /// LOCAL DATA
@@ -99,17 +100,19 @@ void DrvRTC_Task( void *pvParameters )
         {
             DrvRTC_GetTimeStr(timeStr);
             DrvDisplay_DrawString(timeStr, sizeof(timeStr), 0);
-            DrvDisplay_ReleaseDrawSurface( pdFALSE );
+            DrvDisplay_ReleaseDrawSurface( DRAW_RTC_BIT );
 
             taskYIELD();
         }
 
-        ulNotificationValue = ulTaskNotifyTake( pdTRUE, 2 );
+        ulNotificationValue = ulTaskNotifyTake( pdFALSE, 0 );
 
         if ( ulNotificationValue != 0 )
         {
             GetDateTime(&CurrentDateTime);
         }
+
+        vTaskDelay(pdMS_TO_TICKS(50));
     }
 }
 

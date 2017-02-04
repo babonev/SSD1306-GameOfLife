@@ -11,6 +11,7 @@
 
 #include "FreeRTOS.h"
 #include "task.h"
+#include "event_groups.h"
 #include "DrvUART.h"
 #include "DrvRTC.h"
 #include "DrvI2C.h"
@@ -25,6 +26,10 @@
 ///=====================================================================================================================
 /// @brief
 ///=====================================================================================================================
+ /* Declare a variable to hold the handle of the created event group. */
+EventGroupHandle_t xEventGroupHandle;
+/* Declare a variable to hold the data associated with the created    event group. */
+StaticEventGroup_t xDrawEventGroup;
 
 
 ///=====================================================================================================================
@@ -40,6 +45,12 @@ int main(void)
     TaskHandle_t hTask;
 
     NVIC_PriorityGroupConfig( NVIC_PriorityGroup_4 );
+
+    /* Attempt to create the event group. */
+    xEventGroupHandle = xEventGroupCreateStatic( &xDrawEventGroup );
+
+    /* pxEventGroupBuffer was not null so expect the event group to have been created? */
+    assert_param( xEventGroupHandle );
 
     /// @brief Creates the task to handle all USART functions
     hTask = xTaskCreateStatic( &DrvUART_Task,

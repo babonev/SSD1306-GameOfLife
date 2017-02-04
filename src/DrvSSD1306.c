@@ -17,6 +17,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "semphr.h"
+#include "event_groups.h"
 #include "DrvSSD1306.h"
 #include "DrvI2C.h"
 #include "DrvRTC.h"
@@ -30,7 +31,7 @@
 
 #define SLAVE_SSD1306_ADDRESS               0x78
 #define MASTER_DRIVER_ADDRESS               0x1B
-#define I2C_SPEED                           360000
+#define I2C_SPEED                           400000
 #define I2C_TIMEOUT                         1000
 #define I2C_ID                              I2C1
 #define SSD1306_COLUMNADDR                  0x21
@@ -46,7 +47,6 @@
 ///=====================================================================================================================
 StackType_t xDisplayStack[configDISPLAY_TASK_STACK_SIZE];
 StaticTask_t xDisplayTaskTCBBuffer;
-TaskHandle_t xDrawToNotify = 0;
 
 ///=====================================================================================================================
 /// LOCAL DATA
@@ -92,9 +92,8 @@ void DrvDisplay_Init( void )
 ///---------------------------------------------------------------------------------------------------------------------
 void DrvDisplay_Task( void *pvParameters )
 {
-    uint32_t ulNotificationValue;
+    EventBits_t uxBits;
 
-    xDrawToNotify = xTaskGetCurrentTaskHandle();
     xDrawMutex = xSemaphoreCreateMutexStatic( &xDrawMutexBuffer );
 
     xSemaphoreTake( xDrawMutex, (TickType_t) 0 );
@@ -103,10 +102,16 @@ void DrvDisplay_Task( void *pvParameters )
 
     while(1)
     {
-        ulNotificationValue = ulTaskNotifyTake( pdTRUE, (TickType_t) 500 );
+        uxBits = xEventGroupWaitBits(
+            xEventGroupHandle,              /* The event group being tested. */
+            DRAW_GOL_BIT | DRAW_RTC_BIT,    /* The bits within the event group to wait for. */
+            pdTRUE,                         /* clear bits before returning */
+            pdTRUE,                         /* Don't wait for both bits, either bit will do. */
+            100 );                          /* Wait a maximum of 100 for either bit to be set. */
 
-        if ( ulNotificationValue != 0 )
+        if( (uxBits & ( DRAW_GOL_BIT | DRAW_RTC_BIT )) == ( DRAW_GOL_BIT | DRAW_RTC_BIT ) )
         {
+            SSD1306_Refresh();
             SSD1306_DrawBuffer(displayBuff[showBuffIdx]);
         }
 
@@ -141,18 +146,13 @@ BaseType_t DrvDisplay_GetDrawSurface( Canvas_t* const pCanvas, const uint8_t sta
 /// @brief  DrvDisplay_ReleaseDrawSurface
 /// @param  shouldRedraw
 ///---------------------------------------------------------------------------------------------------------------------
-void DrvDisplay_ReleaseDrawSurface( const BaseType_t shouldRedraw )
+void DrvDisplay_ReleaseDrawSurface( const uint8_t eventFlag )
 {
-    if ( (0 != xDrawMutex) && (0 != xDrawToNotify) )
+    if ( 0 != xDrawMutex )
     {
         xSemaphoreGive( xDrawMutex );
 
-        /// Redraw only if the last task requires it
-        if ( pdFALSE != shouldRedraw )
-        {
-            SSD1306_Refresh();
-            xTaskNotifyGive( xDrawToNotify );
-        }
+        (void)xEventGroupSetBits(xEventGroupHandle, eventFlag );
     }
 }
 
@@ -349,7 +349,7 @@ static void WaitFor(I2C_TypeDef* I2Cx, uint32_t I2C_EVENT)
 
     do
     {
-        vTaskDelay(1);
+        vTaskDelay(2);
 
         timeCount--;
         if (timeCount == 0)
