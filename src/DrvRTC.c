@@ -30,6 +30,8 @@
 #define MINUTES_IN_HOUR             ((uint8_t)60)
 #define HOURS_IN_DAY                ((uint8_t)24)
 #define DAYS_IN_YEAR                ((uint16_t)365)
+#define DEFAULT_UTC                 1486213020
+#define TIME_ZONE_CORRECTION        (3600 * 2) // +2 Eastern Europe
 ///---------------------------------------------------------------------------------------------------------------------
 /// @brief Number of days in each month
 static const uint8_t NOD[] = {31,28,31,30,31,30,31,31,30,31,30,31};
@@ -76,7 +78,7 @@ void DrvRTC_Init( void )
     Init_NVIC();
     Init_RTC();
 
-    DrvRTC_SetUTC(0);
+    DrvRTC_SetUTC(DEFAULT_UTC + TIME_ZONE_CORRECTION ); // 12:57:00
 }
 
 ///---------------------------------------------------------------------------------------------------------------------
@@ -290,7 +292,7 @@ static void Init_RTC(void)
     RTC_WaitForLastTask();
 
     /* Set RTC prescaler: set RTC period to 1sec */
-    RTC_SetPrescaler(32767); /* RTC period = RTCCLK/RTC_PR = (32.768 KHz)/(32767+1) */
+    RTC_SetPrescaler(0x7FFF); /* RTC period = RTCCLK/RTC_PR = (32.768 KHz)/(32767+1) */
 
     /* Wait until last write operation on RTC registers has finished */
     RTC_WaitForLastTask();
@@ -334,7 +336,7 @@ static void GetDateTime( DateTimeType* const dt )
 }
 
 ///---------------------------------------------------------------------------------------------------------------------
-/// @brief
+/// @brief  SetDateTime
 /// @param  None
 /// @retval None
 ///---------------------------------------------------------------------------------------------------------------------

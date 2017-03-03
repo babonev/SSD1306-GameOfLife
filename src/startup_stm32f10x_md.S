@@ -231,11 +231,11 @@ _start:
     def_irq_handler    MemManage_Handler
     def_irq_handler    BusFault_Handler
     def_irq_handler    UsageFault_Handler
-    def_irq_handler    SVC_Handler
+    def_irq_handler    vPortSVCHandler
     def_irq_handler    DebugMon_Handler
-    def_irq_handler    PendSV_Handler
+    def_irq_handler    xPortPendSVHandler
     def_irq_handler    SysTick_Handler
-    def_irq_handler    Default_Handler
+    def_irq_handler    xPortSysTickHandler
 
                 // External Interrupts
     def_irq_handler    WWDG_IRQHandler            // Window Watchdog

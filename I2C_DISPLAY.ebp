@@ -19,7 +19,6 @@
 					<Add option="-ffunction-sections" />
 					<Add option="-O0" />
 					<Add option="-g3" />
-					<Add symbol="USE_STDPERIPH_DRIVER" />
 				</Compiler>
 				<Cpp>
 					<Add option="-Wall" />
@@ -66,12 +65,12 @@
 			<Add option="$device=cortex-m3" />
 			<Add option="$stack=0x0100" />
 			<Add option="$heap=0x0000" />
-			<Add option="$lscript=./stm32f103c6_flash.ld" />
+			<Add option="$lscript=./stm32f103c8_flash.ld" />
 		</Device>
 		<Compiler>
 			<Add option="-mfloat-abi=soft" />
 			<Add option="-fno-strict-aliasing" />
-			<Add symbol="STM32F103C6" />
+			<Add symbol="STM32F103c8" />
 			<Add symbol="STM32F10X_LD" />
 			<Add symbol="USE_STDPERIPH_DRIVER" />
 			<Add directory=".\inc" />
@@ -130,6 +129,8 @@
 		<Unit filename="inc\DrvUART.h" />
 		<Unit filename="inc\font.h" />
 		<Unit filename="inc\GameOfLife.h" />
+		<Unit filename="inc\MDL_Cmd.h" />
+		<Unit filename="inc\MDL_Cmd_Cfg.h" />
 		<Unit filename="inc\random.h" />
 		<Unit filename="inc\stm32f10x.h" />
 		<Unit filename="inc\stm32f10x_conf.h" />
@@ -248,6 +249,9 @@
 		<Unit filename="src\main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="src\MDL_Cmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src\random.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -257,29 +261,12 @@
 		<Unit filename="src\system_stm32f10x.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="stm32f103c6_flash.ld" />
-		<Unit filename="stm32f103c6_sram.ld" />
+		<Unit filename="stm32f103c8_flash.ld" />
+		<Unit filename="stm32f103c8_sram.ld" />
 		<Unit filename="version.h" />
 		<Extensions>
 			<code_completion />
 			<debugger>
-				<target_debugging_settings target="Debug" active_interface="ST-link">
-					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBITZ}\share\contrib" executable="STLinkGDB.exe" description="" dont_start_server="false" backoff_time="1000" options="2" reg_filter="0" active_family="STMicroelectronics" gdb_before_conn="" gdb_after_conn="">
-						<family_options family_id="STMicroelectronics">
-							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
-							<option opt_id="ID_VECTOR_START" opt_value="0x08000000" />
-							<option opt_id="ID_RESET_TYPE" opt_value="System" />
-							<option opt_id="ID_LOAD_PROGRAM" opt_value="1" />
-							<option opt_id="ID_SEMIHOST_CHECK" opt_value="0" />
-							<option opt_id="ID_RAM_EXEC" opt_value="0" />
-							<option opt_id="ID_VEC_TABLE" opt_value="1" />
-							<option opt_id="ID_DONT_CONN_RESET" opt_value="0" />
-							<option opt_id="ID_ALL_MODE_DEBUG" opt_value="0" />
-							<option opt_id="ID_DEV_ADDR" opt_value="" />
-							<option opt_id="ID_VERBOSE_LEVEL" opt_value="3" />
-						</family_options>
-					</debug_interface>
-				</target_debugging_settings>
 				<target_debugging_settings target="Release" active_interface="ST-link">
 					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBITZ}\share\contrib" executable="STLinkGDB.exe" description="" dont_start_server="false" backoff_time="1000" options="2" reg_filter="0" active_family="STMicroelectronics" gdb_before_conn="" gdb_after_conn="">
 						<family_options family_id="STMicroelectronics">
@@ -297,6 +284,23 @@
 						</family_options>
 					</debug_interface>
 				</target_debugging_settings>
+				<target_debugging_settings target="Debug" active_interface="ST-link">
+					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBITZ}\share\contrib" executable="STLinkGDB.exe" description="" dont_start_server="false" backoff_time="1000" options="2" reg_filter="0" active_family="STMicroelectronics" gdb_before_conn="" gdb_after_conn="">
+						<family_options family_id="STMicroelectronics">
+							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
+							<option opt_id="ID_VECTOR_START" opt_value="0x08000000" />
+							<option opt_id="ID_RESET_TYPE" opt_value="System" />
+							<option opt_id="ID_LOAD_PROGRAM" opt_value="1" />
+							<option opt_id="ID_SEMIHOST_CHECK" opt_value="0" />
+							<option opt_id="ID_RAM_EXEC" opt_value="0" />
+							<option opt_id="ID_VEC_TABLE" opt_value="0" />
+							<option opt_id="ID_DONT_CONN_RESET" opt_value="0" />
+							<option opt_id="ID_ALL_MODE_DEBUG" opt_value="0" />
+							<option opt_id="ID_DEV_ADDR" opt_value="" />
+							<option opt_id="ID_VERBOSE_LEVEL" opt_value="3" />
+						</family_options>
+					</debug_interface>
+				</target_debugging_settings>
 			</debugger>
 			<envvars />
 			<AutoVersioning>
@@ -305,6 +309,15 @@
 				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
 				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
 			</AutoVersioning>
+			<DoxyBlocks>
+				<comment_style block="2" line="2" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
 		</Extensions>
 	</Project>
 </EmBitz_project_file>

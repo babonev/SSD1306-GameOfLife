@@ -20,6 +20,7 @@
 #include "queue.h"
 #include "task.h"
 #include "DrvUART.h"
+#include "MDL_Cmd.h"
 
 ///=====================================================================================================================
 /// CONSTANT DATA
@@ -127,7 +128,7 @@ void DrvUART_Task( void *pvParameters )
         //Echo back
         if ( get_char(&ch) )
         {
-            put_char(ch);
+            MDL_Cmd_AddInput(ch);
         }
         vTaskDelayUntil(&xLastWakeTime,xFrequency);
     }
